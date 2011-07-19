@@ -1,5 +1,6 @@
 Placemeta::Application.routes.draw do
   match ':width/:height' => 'images#show'
+  match ':greyscale/:width/:height' => 'images#show'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
